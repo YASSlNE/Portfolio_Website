@@ -28,7 +28,6 @@
 
   <!-- TOP SECTION / HERO -->
   <div class="top-container">
-    <!-- Decorative elements or remove if you want it simpler -->
     <img id="top-cloud" src="img/cloud.png" alt="Top Cloud" loading="lazy">
     <img id="bottom-cloud" src="img/cloud.png" alt="Bottom Cloud" loading="lazy">
     <img id="mountain" src="img/mountain2.png" alt="Mountain" loading="lazy">
@@ -86,9 +85,33 @@
       <!-- Synque -->
       <h3>Backend Developer @ Synque (08/2023 – Present)</h3>
       <ul>
-        <li>Developed RESTful APIs using Directus CMS (TypeScript) with real-time updates via WebSockets.</li>
-        <li>Established CI/CD pipelines (GitHub Actions) and created dashboards on Metabase for data insights.</li>
-        <li>Implemented AI-driven conversational platform leveraging FastAPI, custom language models, and speech-to-text.</li>
+        <li>Developed and extended RESTful APIs in a TypeScript-based Directus CMS environment with real-time updates via WebSockets.</li>
+        <li>Integrated membership logic (creation, expiration, renewal reminders) through numerous cronjobs, 
+            leveraging advanced date-handling and in-depth validation checks.</li>
+        <li>Refined order/checkout workflows:
+          <ul>
+            <li>Added multi-step order line management (creation, editing, archiving, voiding) with discount and pro-rata calculations.</li>
+            <li>Handled booking session logic, partial payments, membership date ranges, locker assignments, and real-time availability updates.</li>
+            <li>Implemented robust input validation (via Joi) to prevent compilation errors and ensure reliability.</li>
+          </ul>
+        </li>
+        <li>Created and documented critical endpoints for concurrency checks, public & secured QR code generation, 
+            as well as custom hooks for sending transactional emails and push notifications.</li>
+        <li>Introduced environment-variable-driven features like recurring membership checks, 
+            payment date/timezone adjustments, and toggles for job creation in production vs. development.</li>
+        <li>Enhanced CI/CD pipelines (GitHub Actions), added extensive logging for order lifecycle events, 
+            and built real-time dashboards/analytics on Metabase for data insights.</li>
+        <li>Set up Redis-based caching to handle high-volume concurrency, membership status changes, and WebSocket events safely.</li>
+        <li>**Docker & Documentation**:
+          <ul>
+            <li>Dockerized numerous microservices (including <em>derp-orq</em> code extensions) 
+                and published images to DigitalOcean registries for streamlined deployments.</li>
+            <li>Created detailed technical documentation from commit history 
+                (covering membership termination logic, cronjobs, order/payment flows, role-based security fixes, etc.) 
+                to ensure cross-team clarity and maintainability.</li>
+          </ul>
+        </li>
+        <li>Integrated AI-driven conversational platform leveraging FastAPI, custom language models, and speech-to-text pipelines.</li>
       </ul>
 
       <!-- I-Way Tunis -->
@@ -114,7 +137,7 @@
       <h3>Frameworks & Tools</h3>
       <p>React • Node.js • Angular • Spring Boot • Directus CMS</p>
       <h3>Databases & Cloud</h3>
-      <p>PostgreSQL • MySQL • MongoDB • AWS (EC2, ElasticBeanstalk) • Docker • CI/CD (GitHub Actions)</p>
+      <p>PostgreSQL • MySQL • MongoDB • AWS (EC2, ElasticBeanstalk) • Docker • CI/CD (GitHub Actions) • DigitalOcean</p>
     </div>
     <hr>
 
@@ -139,57 +162,55 @@
   </div>
 
   <!-- FOOTER -->
-<!-- Replace your existing footer with the following -->
-<footer class="footer-distributed">
-	<div class="footer-left">
-	  <img src="img/logo.png" alt="Logo" class="footer-logo" />
-	  <h3>Mahmoud Yassine<span>Chiboub</span></h3>
-  
-	  <p class="footer-links">
-		<a href="index.html">Home</a>
-		·
-		<a href="portfolio.html">Portfolio</a>
-		·
-		<a href="https://drive.google.com/file/d/1UOYJCe39zg8CaXwVI7hfKUS4NeRdsK3M/view?usp=sharing" target="_blank">Resume</a>
-	  </p>
-  
-	  <p class="footer-company-name">
-		© 2025 Mahmoud Yassine Chiboub. All rights reserved.
-	  </p>
-	</div>
-  
-	<div class="footer-center">
-	  <div>
-		<i class="fa fa-map-marker"></i>
-		<p><span>Tunis, Tunisia</span></p>
-	  </div>
-  
-	  <div>
-		<i class="fa fa-envelope"></i>
-		<p>
-		  <a href="mailto:mahmoudyassine.chiboub@insat.ucar.tn">mahmoudyassine.chiboub@insat.ucar.tn</a>
-		</p>
-	  </div>
-  
-	  <div>
-		<i class="fa fa-globe"></i>
-		<p>Open for 2025 Internship Opportunities</p>
-	  </div>
-	</div>
-  
-	<div class="footer-right">
-	  <p class="footer-company-about">
-		<span>About Me</span>
-		Automation & Software Engineering student specialized in Data Science & backend development. Always eager to collaborate on innovative projects.
-	  </p>
-	  <div class="footer-icons">
-		<a href="https://github.com/YASSlNE"><i class="fa fa-github"></i></a>
-		<a href="https://linkedin.com/in/mahmoud-yassine-chiboub"><i class="fa fa-linkedin"></i></a>
-		<!-- Add more social icons if you wish -->
-	  </div>
-	</div>
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <img src="img/logo.png" alt="Logo" class="footer-logo" />
+      <h3>Mahmoud Yassine<span>Chiboub</span></h3>
+
+      <p class="footer-links">
+        <a href="index.html">Home</a>
+        ·
+        <a href="portfolio.html">Portfolio</a>
+        ·
+        <a href="https://drive.google.com/file/d/1UOYJCe39zg8CaXwVI7hfKUS4NeRdsK3M/view?usp=sharing" target="_blank">Resume</a>
+      </p>
+
+      <p class="footer-company-name">
+        © 2025 Mahmoud Yassine Chiboub. All rights reserved.
+      </p>
+    </div>
+
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Tunis, Tunisia</span></p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p>
+          <a href="mailto:mahmoudyassine.chiboub@insat.ucar.tn">mahmoudyassine.chiboub@insat.ucar.tn</a>
+        </p>
+      </div>
+
+      <div>
+        <i class="fa fa-globe"></i>
+        <p>Open for 2025 Internship Opportunities</p>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About Me</span>
+        Automation & Software Engineering student specialized in Data Science & backend development. Always eager to collaborate on innovative projects.
+      </p>
+      <div class="footer-icons">
+        <a href="https://github.com/YASSlNE"><i class="fa fa-github"></i></a>
+        <a href="https://linkedin.com/in/mahmoud-yassine-chiboub"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
   </footer>
-  
+
   <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
