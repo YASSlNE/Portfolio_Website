@@ -78,87 +78,129 @@
     </div>
     <hr>
 
-    <!-- EXPERIENCE SECTION -->
-    <div class="experience">
-      <h2>Experience</h2>
-
-      <!-- Synque -->
-      <h3>Backend Developer @ Synque (08/2023 – Present)</h3>
-      <ul>
-        <li>Developed and extended RESTful APIs in a TypeScript-based Directus CMS environment with real-time updates via WebSockets.</li>
-        <li>Integrated membership logic (creation, expiration, renewal reminders) through numerous cronjobs, 
-            leveraging advanced date-handling and in-depth validation checks.</li>
-        <li>Refined order/checkout workflows:
-          <ul>
-            <li>Added multi-step order line management (creation, editing, archiving, voiding) with discount and pro-rata calculations.</li>
-            <li>Handled booking session logic, partial payments, membership date ranges, locker assignments, and real-time availability updates.</li>
-            <li>Implemented robust input validation (via Joi) to prevent compilation errors and ensure reliability.</li>
-          </ul>
-        </li>
-        <li>Created and documented critical endpoints for concurrency checks, public & secured QR code generation, 
-            as well as custom hooks for sending transactional emails and push notifications.</li>
-        <li>Introduced environment-variable-driven features like recurring membership checks, 
-            payment date/timezone adjustments, and toggles for job creation in production vs. development.</li>
-        <li>Enhanced CI/CD pipelines (GitHub Actions), added extensive logging for order lifecycle events, 
-            and built real-time dashboards/analytics on Metabase for data insights.</li>
-        <li>Set up Redis-based caching to handle high-volume concurrency, membership status changes, and WebSocket events safely.</li>
-        <li>**Docker & Documentation**:
-          <ul>
-            <li>Dockerized numerous microservices (including <em>derp-orq</em> code extensions) 
-                and published images to DigitalOcean registries for streamlined deployments.</li>
-            <li>Created detailed technical documentation from commit history 
-                (covering membership termination logic, cronjobs, order/payment flows, role-based security fixes, etc.) 
-                to ensure cross-team clarity and maintainability.</li>
-          </ul>
-        </li>
-        <li>Integrated AI-driven conversational platform leveraging FastAPI, custom language models, and speech-to-text pipelines.</li>
-      </ul>
-
-      <!-- I-Way Tunis -->
-      <h3>Full-Stack Developer Intern @ I-Way Tunis (07/2023 – 08/2023)</h3>
-      <ul>
-        <li>Created a bug-tracking platform with Spring Boot & Angular, enabling efficient issue resolution.</li>
-        <li>Utilized SQL for data integrity and accessibility of internal workflows.</li>
-      </ul>
-
-      <!-- IEEE -->
-      <h3>IEEE IT Team Member (12/2022 – 06/2023)</h3>
-      <ul>
-        <li>Maintained student branch content using React.js, ensuring consistent UI/UX updates.</li>
-      </ul>
+<!-- EXPERIENCE SECTION -->
+<section class="experience-section">
+  <h2>Experience</h2>
+  <div class="experience-container">
+    
+    <!-- Experience Card 1 -->
+    <div class="experience-card">
+      <div class="card-header">
+        <h3>Backend Developer @ Synque</h3>
+        <span class="date">08/2023 – Present</span>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li>Developed and extended RESTful APIs in a TypeScript-based Directus CMS environment with real-time updates via WebSockets.</li>
+          <li>Integrated membership logic (creation, expiration, renewal reminders) through numerous cronjobs, leveraging advanced date-handling and in-depth validation checks.</li>
+          <li>Refined order/checkout workflows:
+            <ul>
+              <li>Added multi-step order line management (creation, editing, archiving, voiding) with discount and pro-rata calculations.</li>
+              <li>Handled booking session logic, partial payments, membership date ranges, locker assignments, and real-time availability updates.</li>
+              <li>Implemented robust input validation (via Joi) to prevent compilation errors and ensure reliability.</li>
+            </ul>
+          </li>
+          <li>Created and documented critical endpoints for concurrency checks, public & secured QR code generation, as well as custom hooks for sending transactional emails and push notifications.</li>
+          <li>Introduced environment-variable-driven features like recurring membership checks, payment date/timezone adjustments, and toggles for job creation in production vs. development.</li>
+          <li>Enhanced CI/CD pipelines (GitHub Actions), added extensive logging for order lifecycle events, and built real-time dashboards/analytics on Metabase for data insights.</li>
+          <li>Set up Redis-based caching to handle high-volume concurrency, membership status changes, and WebSocket events safely.</li>
+          <li><strong>Docker & Documentation:</strong>
+            <ul>
+              <li>Dockerized numerous microservices (including <em>derp-orq</em> code extensions) and published images to DigitalOcean registries for streamlined deployments.</li>
+              <li>Created detailed technical documentation from commit history (covering membership termination logic, cronjobs, order/payment flows, role-based security fixes, etc.) to ensure cross-team clarity and maintainability.</li>
+            </ul>
+          </li>
+          <li>Integrated AI-driven conversational platform leveraging FastAPI, custom language models, and speech-to-text pipelines.</li>
+        </ul>
+      </div>
     </div>
-    <hr>
+    
+    <!-- Experience Card 2 -->
+    <div class="experience-card">
+      <div class="card-header">
+        <h3>Full-Stack Developer Intern @ I-Way Tunis</h3>
+        <span class="date">07/2023 – 08/2023</span>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li>Created a bug-tracking platform with Spring Boot & Angular, enabling efficient issue resolution.</li>
+          <li>Utilized SQL for data integrity and accessibility of internal workflows.</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Experience Card 3 -->
+    <div class="experience-card">
+      <div class="card-header">
+        <h3>IEEE IT Team Member</h3>
+        <span class="date">12/2022 – 06/2023</span>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li>Maintained student branch content using React.js, ensuring consistent UI/UX updates.</li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
 
     <!-- SKILLS SECTION -->
-    <div class="skills">
+    <section class="skills-section">
       <h2>Technical Skills</h2>
-      <h3>Languages & ML</h3>
-      <p>TypeScript • Java • Python • C++ • TensorFlow • PyTorch • scikit-learn • Transformers</p>
-      <h3>Frameworks & Tools</h3>
-      <p>React • Node.js • Angular • Spring Boot • Directus CMS</p>
-      <h3>Databases & Cloud</h3>
-      <p>PostgreSQL • MySQL • MongoDB • AWS (EC2, ElasticBeanstalk) • Docker • CI/CD (GitHub Actions) • DigitalOcean</p>
-    </div>
-    <hr>
+      
+      <div class="skills-category">
+        <h3>Languages & ML</h3>
+        <ul>
+          <li>TypeScript</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>C++</li>
+          <li>TensorFlow</li>
+          <li>PyTorch</li>
+          <li>scikit-learn</li>
+          <li>Transformers</li>
+        </ul>
+      </div>
+      
+      <div class="skills-category">
+        <h3>Frameworks & Tools</h3>
+        <ul>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Angular</li>
+          <li>Spring Boot</li>
+          <li>Directus CMS</li>
+        </ul>
+      </div>
+      
+      <div class="skills-category">
+        <h3>Databases & Cloud</h3>
+        <ul>
+          <li>PostgreSQL</li>
+          <li>MySQL</li>
+          <li>MongoDB</li>
+          <li>AWS (EC2, ElasticBeanstalk)</li>
+          <li>Docker</li>
+          <li>CI/CD (GitHub Actions)</li>
+          <li>DigitalOcean</li>
+        </ul>
+      </div>
+    </section>
 
     <!-- PROJECT HIGHLIGHT / CTA -->
-    <div class="projects-highlight">
+    <section class="projects-highlight">
       <h2>Featured Projects</h2>
-      <p class="p2">Check out a few highlighted projects below or click the button to see my full portfolio.</p>
-      <a class="btn" href="portfolio.html">My Projects</a>
-    </div>
-    <hr>
-
-    <!-- CONTACT SECTION -->
-    <div id="contact" class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>Interested in collaborating or hiring me?</h3>
       <p class="p2">
-        I’m actively seeking a 4–6 month internship abroad starting Feb–May 2025. 
-        Feel free to reach out if you have an opportunity or just want to connect.
+        Check out 
+        <a class="btn inline-btn" href="portfolio.html">My Projects</a>
+        to see my full portfolio.
       </p>
-      <a class="btn" href="mailto:mahmoudyassine.chiboub@insat.ucar.tn">MESSAGE ME</a>
-    </div>
+    </section>
+
+
   </div>
 
   <!-- FOOTER -->
